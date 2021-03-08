@@ -1,13 +1,13 @@
-const form = document.querySelector(".main-section form");
-const input = document.querySelector(".main-section input");
-const msg = document.querySelector(".main-section .msg");
-const list = document.querySelector(".ajax-section .cities");
+const form = document.querySelector('.main-section form');
+const input = document.querySelector('.main-section input');
+const msg = document.querySelector('.main-section .msg');
+const list = document.querySelector('.ajax-section .cities');
 
 const apiKey = 'c2bfcc2580b3b62b338b0c119345b4fc';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  const inputVal = input.value;
+  let inputVal = input.value;
   const listItems = list.querySelectorAll('.ajax-section .city');
   const listItemsArray = Array.from(listItems);
 
@@ -16,7 +16,7 @@ form.addEventListener('submit', e => {
       let content = '';
       if (inputVal.includes(',')) {
         if (inputVal.slice(',')[1].length > 2) {
-          inputVal = inputVal.slice(',')[0];
+          inputVal = inputVal.slice(',')[0];// eslint-disable-line
           content = el
             .querySelector('.city-name span')
             .textContent.toLowerCase();
@@ -39,10 +39,10 @@ form.addEventListener('submit', e => {
     }
   }
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
-const celciusToFarenheit = (celcius) => ((celcius * 9) / 5 + 32).toFixed(2);
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+  const celciusToFarenheit = (celcius) => ((celcius * 9) / 5 + 32).toFixed(2);
 
-fetch(url)
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       const {
@@ -75,5 +75,4 @@ fetch(url)
   msg.textContent = '';
   form.reset();
   input.focus();
-  
 });
