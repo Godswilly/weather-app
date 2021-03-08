@@ -3,7 +3,7 @@ const input = document.querySelector('.main-section input');
 const msg = document.querySelector('.main-section .msg');
 const list = document.querySelector('.ajax-section .cities');
 
-const myKey = config.API_KEY;
+const myKey = 'c2bfcc2580b3b62b338b0c119345b4fc';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
