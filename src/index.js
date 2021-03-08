@@ -3,7 +3,7 @@ const input = document.querySelector('.main-section input');
 const msg = document.querySelector('.main-section .msg');
 const list = document.querySelector('.ajax-section .cities');
 
-const apiKey = 'c2bfcc2580b3b62b338b0c119345b4fc';
+const myKey = config.API_KEY;
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -39,7 +39,7 @@ form.addEventListener('submit', e => {
     }
   }
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${myKey}&units=metric`;
   const celciusToFarenheit = (celcius) => ((celcius * 9) / 5 + 32).toFixed(2);
 
   fetch(url)
