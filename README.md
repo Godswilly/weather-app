@@ -25,7 +25,7 @@ To get a copy up and running follow these simple steps:-
 
 
 ### Live Demo
-- <a href="https://rawcdn.githack.com/Godswilly/weather-app/be51ab4e50790ebb16c5b7f968966e97d3f6bdb7/dist/index.html">Click here</div>
+- <a href="https://rawcdn.githack.com/Godswilly/weather-app/78b3c07a301546e826bf8152d8a2d1eca944a760/dist/index.html">Click here</div>
 
 
 ## Author
