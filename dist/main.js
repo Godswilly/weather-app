@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const getCity = document.querySelector('button.getCity');\nconst cityNameInput = document.querySelector('input.cityName');\nconst cityTag = document.querySelector('h1');\nconst cityTemp = document.querySelector('p.cityTemp');\nconst date = document.querySelector('p.date');\nconst tempDescription = document.querySelector('p.temp-description');\nconst tempCelcius = document.querySelector('button.celcius');\nconst tempFaren = document.querySelector('button.faren');\nconst wind = document.querySelector('span.wind');\nconst visibility = document.querySelector('span.visibility');\nconst humidity = document.querySelector('span.humidity');\n\n//# sourceURL=webpack://weather-app/./src/index.js?");
+eval("const getCity = document.querySelector('button.getCity');\nconst cityNameInput = document.querySelector('input.cityName');\nconst cityTag = document.querySelector('h1');\nconst cityTemp = document.querySelector('p.cityTemp');\nconst date = document.querySelector('p.date');\nconst tempDescription = document.querySelector('p.temp-description');\nconst tempCelcius = document.querySelector('button.celcius');\nconst tempFaren = document.querySelector('button.faren');\nconst wind = document.querySelector('span.wind');\nconst visibility = document.querySelector('span.visibility');\nconst humidity = document.querySelector('span.humidity');\n\nconst myKey = 'c2bfcc2580b3b62b338b0c119345b4fc';\n\nconst kelvinToCelsius = (temp) => `${(temp - 273.15).toFixed(0)}°C`;\n\nconst kelvinToFarenheit = (temp) => `${((temp - 273.15) * (9 / 5) + 32).toFixed(0)}°F`;\n\n//# sourceURL=webpack://weather-app/./src/index.js?");
 
 /***/ })
 
