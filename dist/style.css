@@ -1,0 +1,28 @@
+.convertTemp {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  border: 0.5px solid rgb(93, 105, 121);
+  color: white;
+}
+
+.input-tag {
+  background-color: rgba(0, 0, 0, 0.11);
+  border: none;
+  font-size: larger;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+body,
+.tog {
+  background-color: rgba(28, 29, 28, 0.842);
+  color: white;
+}
+
+.convertTemp {
+  height: 40px;
+}
