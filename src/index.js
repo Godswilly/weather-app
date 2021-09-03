@@ -19,7 +19,12 @@ const kelvinToFarenheit = (temp) => `${((temp - 273.15) * (9 / 5) + 32).toFixed(
 const weatherData = async () => {
   try {
     const cityName = cityNameInput.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${myKey}`;
+    let url;
+    if (cityName === '') {
+      url = `http://api.openweathermap.org/data/2.5/weather?q=${'aba'}&appid=${myKey}`;
+    } else {
+      url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${myKey}`;
+    }
     const response = await fetch(url, { mode: 'cors' });
     const cityData = await response.json();
     const city = await cityData;
@@ -54,3 +59,5 @@ getCity.addEventListener('click', (e) => {
   e.preventDefault();
   weatherData();
 });
+
+weatherData();
