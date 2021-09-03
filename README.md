@@ -13,7 +13,7 @@ This project is a simple weather app that shows the weather report of a chosen c
 ## Getting Started
 To get a copy up and running follow these simple steps:-
 
-- Clone https://github.com/Godswilly/weather-app.git to your local machine.
+- [Clone](https://github.com/Godswilly/weather-app.git) to your local machine.
 - cd into the weather-app directory and navigate into the dist directory.
 - Open the index.html file with the browser
 
@@ -25,15 +25,17 @@ To get a copy up and running follow these simple steps:-
 
 
 ### Live Demo
-- <a href="https://rawcdn.githack.com/Godswilly/weather-app/78b3c07a301546e826bf8152d8a2d1eca944a760/dist/index.html">Click here</div>
+- <a href="https://ecstatic-brahmagupta-51dca7.netlify.app/">Click here</div>
 
 
 ## Author
- Kalu Agu Kalu
 
-- Github: https://github.com/Godswilly
-- LinkedIn: https://www.linkedin.com/in/kalu-agu-kalu/
-- Twitter: https://twitter.com/KaluAguKalu17
+👤 **Kalu Agu Kalu**
+
+- [Github](https://github.com/Godswilly)
+- [Twitter](https://twitter.com/KaluAguKalu17)
+- [Linkedin](https://www.linkedin.com/in/kaluagukalu/)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
